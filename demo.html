@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style type="text/css">
+        .node {
+            cursor: pointer;
+        }
+
+        .overlay {
+            background-color: #fff;
+        }
+
+        .node circle {
+            fill: #fff;
+            stroke: #2bb7f5;
+            stroke-width: 1.5px;
+            width:30px;
+            height:30px;
+        }
+        .node rect {
+            fill: #fff;
+            stroke: #2bb7f5;
+            stroke-width: 1.5px;
+        }        
+        
+        .node text {
+            font-size: 13px;
+            font-family: sans-serif;
+        }
+
+        .link {
+            fill: none;
+            stroke: #727070;
+            stroke-width: 1.5px;
+        }
+
+        .ghostCircle.show {
+            display: block;
+        }
+
+        .ghostCircle, .activeDrag .ghostCircle {
+            display: none;
+        }
+    </style>
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/d3.v3.min.js"></script>
+    <!-- <script src="js/dndTree_diag.js"></script> -->
+    <!-- <script src="js/dndTree_rect.js"></script> -->
+    <script src="js/dndTree_circle.js"></script>
+    
+    <script src="js/draw.js"></script>    
+    
+    </head>
+    <body>
+        <div id="tree-container"></div>
+    </body>
+</html>
