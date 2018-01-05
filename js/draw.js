@@ -4,15 +4,15 @@ var viewerHeight='';
 
 function initData() {
   this.text ={
-    "name": "西瓜之家",
+    "name": "模拟之家",
     "url":"img/icon.png",
     "children": [
       {
-        "name": "西瓜01",
+        "name": "模拟01",
         "url":"img/icon.png",
         "children": [
           {
-            "name": "西瓜01_1",
+            "name": "模拟01_1",
             "url":"img/icon.png",
             "children": [
               {
@@ -64,7 +64,7 @@ function initData() {
             ]
           },
           {
-            "name": "西瓜01_2",
+            "name": "模拟01_2",
             "url":"img/icon.png",
             "children": [
               {
@@ -155,7 +155,7 @@ function initData() {
             ]
           },
           {
-            "name": "西瓜01_3",
+            "name": "模拟01_3",
             "url":"img/icon.png",
             "children": [
               {
@@ -177,11 +177,11 @@ function initData() {
         ]
       },
       {
-        "name": "西瓜02",
+        "name": "模拟02",
         "url":"img/icon.png",
         "children": [  
           {
-            "name": "西瓜02_1",
+            "name": "模拟02_1",
             "url":"img/icon.png",
             "children": [
               {
@@ -192,7 +192,7 @@ function initData() {
             ]
           },
            {
-            "name": "西瓜02_2",
+            "name": "模拟02_2",
             "url":"img/icon.png",
             "children": [
               {
@@ -228,7 +228,7 @@ function initData() {
             ]
           },
            {
-            "name": "西瓜02_3",
+            "name": "模拟02_3",
             "url":"img/icon.png",
             "children": [
               {
@@ -244,7 +244,7 @@ function initData() {
             ]
           },
            {
-            "name": "西瓜02_4",
+            "name": "模拟02_4",
             "url":"img/icon.png",
             "children": [
               {
@@ -280,7 +280,7 @@ function initData() {
             ]
           },
            {
-            "name": "西瓜02_5",
+            "name": "模拟02_5",
             "url":"img/icon.png",
             "children": [
               {
@@ -318,11 +318,11 @@ function initData() {
         ]
       },
       {
-        "name": "西瓜03",
+        "name": "模拟03",
         "url":"img/icon.png",
         "children": [
           {
-            "name": "西瓜03_1",
+            "name": "模拟03_1",
             "url":"img/icon.png",
             "children": [
               {
