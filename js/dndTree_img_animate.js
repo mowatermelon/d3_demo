@@ -216,7 +216,7 @@
             }
         };
         childCount(0, root);
-        var newHeight = d3.max(levelWidth) * imgHeight * 3; // 25 pixels per line  
+        var newHeight = d3.max(levelWidth) * imgHeight * 2; // 25 pixels per line  
         tree = tree.size([newHeight, viewerWidth]);
 
         // Compute the new tree layout.计算新的树形布局。
@@ -224,15 +224,15 @@
             links = tree.links(nodes);
 
         // // Set widths between levels based on maxLabelLength.根据maxLabelLength设置级别之间的宽度。
-        // nodes.forEach(function(d) {
-        //     // d.y = (d.depth * (maxLabelLength * 10)); //maxLabelLength * 10px
-        //     // alternatively to keep a fixed scale one can set a fixed depth per level
-        //     // Normalize for fixed-depth by commenting out below line
-        //     // d.y = (d.depth * 500); //500px per level.
-        //     //或者保持一个固定的比例，可以设置一个固定的深度
-        //     //通过注释下面的行来标准化为固定深度
-        //     d.y =(d.depth * 500); //每个级别500px
-        // });
+        nodes.forEach(function(d) {
+            d.y = (d.depth * (maxLabelLength * (imgHeight/2))); //maxLabelLength * 10px
+            // alternatively to keep a fixed scale one can set a fixed depth per level
+            // Normalize for fixed-depth by commenting out below line
+            // d.y = (d.depth * 500); //500px per level.
+            //或者保持一个固定的比例，可以设置一个固定的深度
+            //通过注释下面的行来标准化为固定深度
+            // d.y =(d.depth * 500); //每个级别500px
+        });
 
         // Update the nodes…更新节点...
         node = svgGroup.selectAll("g.node")
